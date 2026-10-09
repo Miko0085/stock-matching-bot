@@ -1,0 +1,13 @@
+{
+  "event": "message.new",
+  "provider": "telegram",
+  "chat_id": "-1001987654321",
+  "message_id": "500103",
+  "sender_id": "9003",
+  "sender_name": "Broker RentCase",
+  "sender_username": "broker_rentcase",
+  "text": "Need a 2BR apartment for rent in Business Bay, budget up to 150k per year.",
+  "posted_at": "2026-09-20T09:10:00Z",
+  "chat_name": "Dubai Real Estate, UAE Brokers",
+  "source_url": "https://t.me/uae_brokers/500103"
+}

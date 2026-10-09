@@ -1,0 +1,13 @@
+{
+  "event": "message.new",
+  "provider": "telegram",
+  "chat_id": "-1009876543211",
+  "message_id": "900002",
+  "sender_id": "9876543211",
+  "sender_name": "Listings Bot",
+  "sender_username": "listings_feed",
+  "text": "3BR Apartment for Sale | The Isle, Dubai Harbour\n✨ Premium 3-bedroom residence with stunning Palm views, featuring a unique design and high-end finishes throughout.\n📍 Dubai Harbour\n📐 173.82 sqm\n🌅 Palm View\n🏡 Premium Materials & Contemporary Design\n💰 Sale Price: AED 10.5 Millions\n\n---\n\n📍JVT | Maya Residences 5 | 2BR | Store | Community View\n1226 sqft\nHandover: Ready\nPrice AED 1.82M\n\n---\n\nfor sale\n📍Business Bay\nThe Paragon\nMid Floor\n2BR\n1600 sqft\n3M\n\n---\n\nBinghatti Crest\n🗺 Location:  JVC\n🛏 Bedrooms: 2 BD\n🔑 Handover: Ready\n📐 Area m2: (89) 959 sq.ft\nPrice: 1.425 M AED Unfinished\n1.44 M AED Furnished\nView : Community",
+  "posted_at": "2026-09-25T12:00:00Z",
+  "chat_name": "Dubai Listings Feed",
+  "source_url": "https://t.me/listings_feed/900002"
+}

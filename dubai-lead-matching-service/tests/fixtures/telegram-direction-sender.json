@@ -1,0 +1,12 @@
+{
+  "event": "message.new",
+  "provider": "telegram",
+  "chat_id": "-1001234567890",
+  "message_id": "1001",
+  "sender_id": "1234567890",
+  "sender_name": "Broker A",
+  "text": "My client is looking for a 2BR in Business Bay, budget up to AED 2.5M.",
+  "posted_at": "2026-09-17T12:00:00Z",
+  "chat_name": "Dubai Brokers",
+  "source_url": "https://t.me/dubai_brokers/1001"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "nika-abu-dhabi-lead-matching-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Abu Dhabi lead matching service -- built BY ANALOGY with dubai-lead-matching-service (same AED/field-model semantics as Dubai), own process/port/schema, real working matching from day one.",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "node --test tests/unit/**/*.test.js",
+    "test:integration": "node scripts/run-integration-tests.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "pg": "^8.13.1",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

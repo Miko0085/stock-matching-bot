@@ -1,0 +1,13 @@
+{
+  "event": "message.new",
+  "provider": "telegram",
+  "chat_id": "-1001987654321",
+  "message_id": "500102",
+  "sender_id": "9002",
+  "sender_name": "Broker Case02",
+  "sender_username": "broker_case02",
+  "text": "Client is looking for a property in DSO, Warsan, Al Furjan or Bur Dubai, budget up to 100M.",
+  "posted_at": "2026-09-20T09:05:00Z",
+  "chat_name": "Dubai Real Estate, UAE Brokers",
+  "source_url": "https://t.me/uae_brokers/500102"
+}

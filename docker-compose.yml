@@ -1,0 +1,90 @@
+services:
+  telegram-worker:
+    build:
+      context: ./telegram-worker
+    container_name: telegram-worker
+    restart: unless-stopped
+    env_file:
+      - ./telegram-worker/.env
+    volumes:
+      - ./telegram-worker/sessions:/app/sessions
+      - ./telegram-worker/logs:/app/logs
+      - ./telegram-worker/state:/app/state
+    ports:
+      - "8091:8091"
+
+  whatsapp-worker:
+    build:
+      context: ./whatsapp-worker
+    container_name: whatsapp-worker
+    restart: unless-stopped
+    env_file:
+      - ./whatsapp-worker/.env
+    volumes:
+      - ./whatsapp-worker/sessions:/app/sessions
+      - ./whatsapp-worker/logs:/app/logs
+    ports:
+      - "8092:8092"
+
+  ai-qualifier-postgres:
+    image: postgres:16
+    container_name: ai-qualifier-postgres
+    restart: unless-stopped
+    env_file:
+      - ./app/ai-qualifier/.env
+    volumes:
+      - ai_qualifier_pgdata:/var/lib/postgresql/data
+    # Local DB-client access only. Binding to 127.0.0.1 keeps PostgreSQL
+    # unavailable from the LAN and the public Cloudflare tunnel.
+    ports:
+      - "127.0.0.1:5434:5432"
+
+  ai-qualifier:
+    build:
+      context: ./app/ai-qualifier
+    container_name: ai-qualifier
+    restart: unless-stopped
+    env_file:
+      - ./app/ai-qualifier/.env
+    depends_on:
+      - ai-qualifier-postgres
+    ports:
+      - "8093:8093"
+
+  # Temporary public QA access. Starts only with the explicit public-test
+  # profile and receives a random HTTPS address from TryCloudflare.
+  ai-qualifier-tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: ai-qualifier-tunnel
+    restart: unless-stopped
+    profiles:
+      - public-test
+    depends_on:
+      - ai-qualifier
+    command:
+      - tunnel
+      - --no-autoupdate
+      - --url
+      - http://ai-qualifier:8093
+
+  # Same as ai-qualifier-tunnel above, but for telegram-worker's read-only
+  # resolve endpoints (e.g. /telegram/messages/{id}) -- lets a remote n8n
+  # instance look up a numeric Telegram sender id without touching this
+  # worker's own group-monitoring config. Every call still requires
+  # X-API-Key, same as any other telegram-worker endpoint.
+  telegram-worker-tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: telegram-worker-tunnel
+    restart: unless-stopped
+    profiles:
+      - public-test
+    depends_on:
+      - telegram-worker
+    command:
+      - tunnel
+      - --no-autoupdate
+      - --url
+      - http://telegram-worker:8091
+
+volumes:
+  ai_qualifier_pgdata:

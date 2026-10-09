@@ -1,0 +1,64 @@
+.env
+.env.*.local
+*service-account*.json
+google-service-account*.json
+node_modules/
+dist/
+coverage/
+.tmp/
+*.log
+.DS_Store
+.vscode/settings.local.json
+reference/*secret*
+reference/*production*workflow*.json
+
+# telegram-worker / whatsapp-worker runtime state -- never commit session
+# files (provider auth material), logs, or the Python bytecode cache. See
+# docs/CHANNEL_ACCOUNT_MANAGEMENT.md. Their .py/.js SOURCE is tracked.
+telegram-worker/sessions/
+telegram-worker/logs/
+telegram-worker/state/
+telegram-worker/__pycache__/
+__pycache__/
+whatsapp-worker/sessions/
+whatsapp-worker/logs/
+whatsapp-worker/wa_session/
+
+# Stale pre-Matching-V2 copy of this same repo (its own .git.disabled points
+# at this repo's own feature/simplify-matching-v2 branch) -- superseded by
+# lead-matching-service/ + rf-lead-matching-service/ + dashboard/ at the
+# repo root (2026-09-17 audit, docs/ARCHITECTURE_AUDIT_2026-09-17.md;
+# confirmed dead 2026-09-30: every env var in its .env belongs to the
+# retired pilot-v1 n8n/Sheets workflow, nothing live reads it). Was already
+# untracked (0 files in git ls-files) -- this just makes that permanent.
+nika-matching-pilot-starter/
+
+# Empty leftover from the lead-matching-service -> dubai-lead-matching-service
+# rename (2026-10-05, Dubai rename): git mv failed with "Device or resource
+# busy" (a file handle held by a running process/IDE watcher), so contents
+# were copied to the new path and this old directory's files were removed
+# individually -- the empty top-level directory itself could not be rmdir'd
+# for the same reason. Harmless; safe to delete by hand once nothing holds
+# it open.
+lead-matching-service/
+
+# IDE/tooling scratch, never project source.
+.claude/
+.idea/
+
+# Live Telegram session file (real account auth material, not a credential
+# that belongs in version control) and one-off QR-login screenshot --
+# found sitting at repo root 2026-10-02, never meant to be tracked.
+*.session
+*.session-journal
+telegram_qr_login.png
+
+# One-off debug artifacts and working-session scratch files that have
+# accumulated at the repo root over time -- never source, never meant to
+# be shared via git history.
+scratchpad_today_*.txt
+whatsapp_debug_*.html
+whatsapp_debug_*.png
+*.zip
+RF_Stock_Joker_export_*.csv
+Telegram_чаты_*.xlsx

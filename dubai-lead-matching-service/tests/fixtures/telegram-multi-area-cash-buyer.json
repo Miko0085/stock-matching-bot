@@ -1,0 +1,13 @@
+{
+  "event": "message.new",
+  "provider": "telegram",
+  "chat_id": "-1001987654321",
+  "message_id": "500101",
+  "sender_id": "9001",
+  "sender_name": "Broker Case01",
+  "sender_username": "broker_case01",
+  "text": "Looking for a 3-4BR villa in Tilal Al Furjan, Jabal Ali Village or Nad Al Sheba Gardens, budget up to 6M, cash buyer only.",
+  "posted_at": "2026-09-20T09:00:00Z",
+  "chat_name": "Dubai Real Estate, UAE Brokers",
+  "source_url": "https://t.me/uae_brokers/500101"
+}

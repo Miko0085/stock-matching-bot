@@ -1,0 +1,13 @@
+{
+  "event": "message.new",
+  "provider": "telegram",
+  "chat_id": "-1001987654321",
+  "message_id": "500105",
+  "sender_id": "9005",
+  "sender_name": "Broker RuOffer",
+  "sender_username": "broker_ruoffer",
+  "text": "Сдам 2BR в Marina, срочно, 120k в год, от собственника.",
+  "posted_at": "2026-09-20T09:20:00Z",
+  "chat_name": "Dubai Real Estate, UAE Brokers",
+  "source_url": "https://t.me/uae_brokers/500105"
+}

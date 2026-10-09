@@ -1,0 +1,12 @@
+{
+  "event": "message.new",
+  "provider": "telegram",
+  "chat_id": "-1001111111111",
+  "message_id": "1",
+  "sender_id": "1111111111",
+  "sender_name": "Jaseem Mg",
+  "text": "Business Bay",
+  "posted_at": "2026-09-17T14:00:00Z",
+  "chat_name": "Test Group",
+  "source_url": null
+}

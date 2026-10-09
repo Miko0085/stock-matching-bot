@@ -1,0 +1,27 @@
+{
+  "name": "nika-matching-pilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nika Estate Mini Matching Pilot — deterministic matching engine, PostgreSQL persistence (UAE/RF contours). n8n workflow generation/deployment tooling was retired 2026-10-02 (see docs/DECISIONS.md) — the active matchers are lead-matching-service/rf-lead-matching-service, not n8n Code nodes.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "node --test tests/unit/**/*.test.js",
+    "test:integration": "node scripts/run-integration-tests.js",
+    "lint": "eslint .",
+    "dashboard": "node dashboard/server.js",
+    "tunnel": "bash scripts/tunnel.sh"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^183.0.0",
+    "pg": "^8.13.1",
+    "yauzl": "^3.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,11 @@
+-- Requester display name (ADR-022 follow-up). Not every requester has a
+-- resolvable contact link -- Telegram users without a public @username,
+-- and WhatsApp senders whose phone number is hidden behind a LID that
+-- Baileys' local lidMapping cache has never seen resolved (a real,
+-- unfixable platform limitation, not a bug: WhatsApp's LID system is
+-- designed to withhold phone numbers from other group members in many
+-- cases). The display name (sender_name/pushName on WhatsApp,
+-- first/last name on Telegram) is always captured at message-arrival
+-- time regardless, and gives a human at least something to search the
+-- source group for manually when no clickable contact exists.
+ALTER TABLE matching.match_runs ADD COLUMN IF NOT EXISTS requester_name TEXT;

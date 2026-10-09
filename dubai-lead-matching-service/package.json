@@ -1,0 +1,33 @@
+{
+  "name": "nika-dubai-lead-matching-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Lead Matching Service — transport-agnostic pipeline from raw Telegram/WhatsApp webhook to persisted deterministic MatchResult. Runs independently of n8n.",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "npm run test:unit && npm run test:integration && npm run test:regression",
+    "test:unit": "node --test tests/unit/**/*.test.js",
+    "test:integration": "node scripts/run-integration-tests.js",
+    "test:regression": "node --test tests/regression/**/*.test.js",
+    "lint": "eslint .",
+    "replay": "node scripts/replay-message.js",
+    "replay:metrics": "node scripts/replay-metrics.js",
+    "shadow": "node scripts/shadow-compare.js",
+    "benchmark": "node scripts/benchmark.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "pg": "^8.13.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

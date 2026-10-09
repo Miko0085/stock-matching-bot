@@ -1,0 +1,21 @@
+# Keeps the Docker build context (used by dubai-lead-matching-service/Dockerfile,
+# built from this directory) small and free of secrets/session material --
+# only src/, scripts/lib/, sql/, and dubai-lead-matching-service/ are ever
+# actually COPYed into the image.
+.git
+# `**/` matches at any depth, not just the build-context root -- a plain
+# ".env" pattern here would NOT catch dubai-lead-matching-service/.env (found the
+# hard way: a built image had the real local .env, OPENAI_API_KEY
+# included, baked into a layer via `COPY dubai-lead-matching-service .`).
+**/.env
+**/.env.*
+!**/.env.example
+node_modules
+dubai-lead-matching-service/node_modules
+dashboard
+n8n
+docs
+tests
+dubai-lead-matching-service/tests
+reference
+**/*.log

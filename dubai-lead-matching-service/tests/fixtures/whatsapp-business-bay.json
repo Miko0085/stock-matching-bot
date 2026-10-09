@@ -1,0 +1,11 @@
+{
+  "event": "message.new",
+  "provider": "whatsapp",
+  "chat_id": "120363426448202179@g.us",
+  "message_id": "AC75F9A04C0F0183CEF193D86510DB31",
+  "sender_id": "223755615867103@lid",
+  "sender_id_alt": "971586007033@s.whatsapp.net",
+  "sender_name": "Muhammad Faisal",
+  "text": "Need 2BR Business Bay max 2.5M",
+  "posted_at": "2026-09-17T12:30:00Z"
+}

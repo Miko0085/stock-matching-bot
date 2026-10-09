@@ -1,0 +1,199 @@
+﻿type,alias,canonical,parent_area,enabled
+property_type,Apartment,Apartment,,true
+property_type,Apartments,Apartment,,true
+property_type,Flat,Apartment,,true
+property_type,Flats,Apartment,,true
+property_type,Apt,Apartment,,true
+property_type,Apts,Apartment,,true
+property_type,Apartment Unit,Apartment,,true
+property_type,Villa,Villa,,true
+property_type,Villas,Villa,,true
+property_type,Villa House,Villa,,true
+property_type,Detached Villa,Villa,,true
+property_type,Townhouse,Townhouse,,true
+property_type,Townhouses,Townhouse,,true
+property_type,Town House,Townhouse,,true
+property_type,Town Houses,Townhouse,,true
+property_type,TH,Townhouse,,true
+property_type,Townhome,Townhouse,,true
+property_type,Townhomes,Townhouse,,true
+property_type,Studio,Studio,,true
+property_type,Studios,Studio,,true
+property_type,Studio Apartment,Studio,,true
+property_type,Studio Flat,Studio,,true
+property_type,Studio Apt,Studio,,true
+property_type,Penthouse,Penthouse,,true
+property_type,Penthouses,Penthouse,,true
+property_type,Pent House,Penthouse,,true
+property_type,Pent Houses,Penthouse,,true
+property_type,PH,Penthouse,,true
+property_type,Duplex,Duplex,,true
+property_type,Duplexes,Duplex,,true
+property_type,Duplex Apartment,Duplex,,true
+property_type,Duplex Flat,Duplex,,true
+property_type,Office,Office,,true
+property_type,Offices,Office,,true
+property_type,Office Space,Office,,true
+property_type,Office Unit,Office,,true
+property_type,Retail,Retail,,true
+property_type,Retail Unit,Retail,,true
+property_type,Retail Space,Retail,,true
+property_type,Shop,Retail,,true
+property_type,Shops,Retail,,true
+property_type,Storefront,Retail,,true
+property_type,Land,Land,,true
+property_type,Plot,Land,,true
+property_type,Land Plot,Land,,true
+property_type,Plot of Land,Land,,true
+property_type,Residential Plot,Land,,true
+property_type,Building,Building,,true
+property_type,Buildings,Building,,true
+property_type,Whole Building,Building,,true
+property_type,Entire Building,Building,,true
+property_type,Full Building,Building,,true
+area,Al Reem Island,Al Reem Island,,true
+area,AlReemIsland,Al Reem Island,,true
+area,Reem Island,Al Reem Island,,true
+area,Reem,Al Reem Island,,true
+area,Al Reem,Al Reem Island,,true
+area,Аль Рим,Al Reem Island,,true
+area,Остров Рим,Al Reem Island,,true
+area,Yas Island,Yas Island,,true
+area,YasIsland,Yas Island,,true
+area,Yas,Yas Island,,true
+area,Остров Яс,Yas Island,,true
+area,Яс,Yas Island,,true
+area,Saadiyat Island,Saadiyat Island,,true
+area,SaadiyatIsland,Saadiyat Island,,true
+area,Saadiyat,Saadiyat Island,,true
+area,Sadiyat Island,Saadiyat Island,,true
+area,Sadiyat,Saadiyat Island,,true
+area,Саадият,Saadiyat Island,,true
+area,Остров Саадият,Saadiyat Island,,true
+area,Al Raha Beach,Al Raha Beach,,true
+area,AlRahaBeach,Al Raha Beach,,true
+area,Raha Beach,Al Raha Beach,,true
+area,Аль Раха Бич,Al Raha Beach,,true
+area,Al Raha Gardens,Al Raha Gardens,,true
+area,AlRahaGardens,Al Raha Gardens,,true
+area,Raha Gardens,Al Raha Gardens,,true
+area,Al Maryah Island,Al Maryah Island,,true
+area,AlMaryahIsland,Al Maryah Island,,true
+area,Maryah Island,Al Maryah Island,,true
+area,Al Maryah,Al Maryah Island,,true
+area,Maryah,Al Maryah Island,,true
+area,Аль Марья,Al Maryah Island,,true
+area,Остров Марья,Al Maryah Island,,true
+area,Khalifa City,Khalifa City,,true
+area,KhalifaCity,Khalifa City,,true
+area,Khalifa City A,Khalifa City,,true
+area,Khalifa City A Abu Dhabi,Khalifa City,,true
+area,Халифа Сити,Khalifa City,,true
+area,Al Reef,Al Reef,,true
+area,AlReef,Al Reef,,true
+area,Reef Abu Dhabi,Al Reef,,true
+area,Аль Риф,Al Reef,,true
+area,Masdar City,Masdar City,,true
+area,MasdarCity,Masdar City,,true
+area,Masdar,Masdar City,,true
+area,Масдар Сити,Masdar City,,true
+area,Al Bateen,Al Bateen,,true
+area,AlBateen,Al Bateen,,true
+area,Bateen,Al Bateen,,true
+area,Аль Батин,Al Bateen,,true
+area,Al Zeina,Al Zeina,,true
+area,AlZeina,Al Zeina,,true
+area,Zeina,Al Zeina,,true
+area,Аль Зейна,Al Zeina,,true
+area,Al Rahba,Al Rahba,,true
+area,AlRahba,Al Rahba,,true
+area,Rahba,Al Rahba,,true
+area,Mohamed Bin Zayed City,Mohamed Bin Zayed City,,true
+area,MohamedBinZayedCity,Mohamed Bin Zayed City,,true
+area,Mohammed Bin Zayed City,Mohamed Bin Zayed City,,true
+area,MohammedBinZayedCity,Mohamed Bin Zayed City,,true
+area,MBZ City,Mohamed Bin Zayed City,,true
+area,MBZ,Mohamed Bin Zayed City,,true
+area,Corniche Road,Corniche Road,,true
+area,CornicheRoad,Corniche Road,,true
+area,Corniche,Corniche Road,,true
+area,Abu Dhabi Corniche,Corniche Road,,true
+area,Корниш,Corniche Road,,true
+area,Danet Abu Dhabi,Danet Abu Dhabi,,true
+area,DanetAbuDhabi,Danet Abu Dhabi,,true
+area,Danet,Danet Abu Dhabi,,true
+area,Hydra Village,Hydra Village,,true
+area,HydraVillage,Hydra Village,,true
+area,Hydra,Hydra Village,,true
+area,Al Ghadeer,Al Ghadeer,,true
+area,AlGhadeer,Al Ghadeer,,true
+area,Ghadeer,Al Ghadeer,,true
+area,Nareel Island,Nareel Island,,true
+area,NareelIsland,Nareel Island,,true
+area,Nareel,Nareel Island,,true
+area,Ramhan Island,Ramhan Island,,true
+area,RamhanIsland,Ramhan Island,,true
+area,Ramhan,Ramhan Island,,true
+area,Al Hudayriat Island,Al Hudayriat Island,,true
+area,AlHudayriatIsland,Al Hudayriat Island,,true
+area,Hudayriat Island,Al Hudayriat Island,,true
+area,Hudayriyat Island,Al Hudayriat Island,,true
+area,Al Hudayriyat Island,Al Hudayriat Island,,true
+area,Hudayriyat,Al Hudayriat Island,,true
+area,Hudayriat,Al Hudayriat Island,,true
+area,Al Jubail Island,Al Jubail Island,,true
+area,AlJubailIsland,Al Jubail Island,,true
+area,Jubail Island,Al Jubail Island,,true
+area,Jubail Abu Dhabi,Al Jubail Island,,true
+area,Ghantoot,Ghantoot,,true
+area,Gantoot,Ghantoot,,true
+area,Ghantut,Ghantoot,,true
+area,Гантут,Ghantoot,,true
+area,Al Jurf,Al Jurf,,true
+area,AlJurf,Al Jurf,,true
+area,Al Jurf Abu Dhabi,Al Jurf,,true
+area,The Marina,The Marina,,true
+area,TheMarina,The Marina,,true
+area,Marina Abu Dhabi,The Marina,,true
+area,Al Khalidiya,Al Khalidiya,,true
+area,AlKhalidiya,Al Khalidiya,,true
+area,Khalidiya,Al Khalidiya,,true
+area,Аль Халидия,Al Khalidiya,,true
+area,Al Mushrif,Al Mushrif,,true
+area,AlMushrif,Al Mushrif,,true
+area,Mushrif Abu Dhabi,Al Mushrif,,true
+area,Al Shamkha,Al Shamkha,,true
+area,AlShamkha,Al Shamkha,,true
+area,Shamkha,Al Shamkha,,true
+area,Shakhbout City,Shakhbout City,,true
+area,ShakhboutCity,Shakhbout City,,true
+area,Shakhbout,Shakhbout City,,true
+area,Baniyas,Baniyas,,true
+area,Bani Yas,Baniyas,,true
+area,Baniyas Abu Dhabi,Baniyas,,true
+area,Rabdan,Rabdan,,true
+area,Rabdan Abu Dhabi,Rabdan,,true
+area,Al Qurm,Al Qurm,,true
+area,AlQurm,Al Qurm,,true
+area,Qurm Abu Dhabi,Al Qurm,,true
+area,Al Bahya,Al Bahya,,true
+area,AlBahya,Al Bahya,,true
+area,Bahya,Al Bahya,,true
+area,Al Mina,Al Mina,,true
+area,AlMina,Al Mina,,true
+area,Mina Abu Dhabi,Al Mina,,true
+area,Al Muneera,Al Muneera,,true
+area,AlMuneera,Al Muneera,,true
+area,Muneera,Al Muneera,,true
+area,Al Bandar,Al Bandar,,true
+area,AlBandar,Al Bandar,,true
+area,Bandar Al Raha,Al Bandar,,true
+area,Yas Bay,Yas Bay,,true
+area,YasBay,Yas Bay,,true
+area,Saadiyat Cultural District,Saadiyat Cultural District,,true
+area,SaadiyatCulturalDistrict,Saadiyat Cultural District,,true
+area,Saadiyat Cultural,Saadiyat Cultural District,,true
+area,Cultural District Saadiyat,Saadiyat Cultural District,,true
+area,Madinat Al Riyad,Madinat Al Riyad,,true
+area,MadinatAlRiyad,Madinat Al Riyad,,true
+area,Madinat Riyad,Madinat Al Riyad,,true
